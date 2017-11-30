@@ -63,3 +63,6 @@ typings/
 .env
 # npm version lock file
 package-lock.json
+
+# development
+tool/stattistics.html
