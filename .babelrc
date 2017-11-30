@@ -1,0 +1,21 @@
+{
+    "presets": [
+      ["env", {
+          "target": {
+              "browsers": ["last 2 versions", "ie >= 10", "chrome >= 45", "opera >= 32"]
+          },
+          "debug": true,
+          "include": ["es6.string.starts-with", "es6.object.assign"],
+          "useBuiltIns": "usage"
+      }],
+      "stage-2"
+    ],
+    "plugins": [
+      ["transform-runtime", {
+        "helpers": true, // defaults to true
+        "polyfill": true, // defaults to true
+        "regenerator": true, // defaults to true
+        "moduleName": "babel-runtime" // defaults to "babel-runtime"
+      }]
+    ]
+  }
