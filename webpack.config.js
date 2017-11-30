@@ -22,7 +22,7 @@ module.exports = {
     },
     plugins: [
         // 作用域提升(scope hoisting)
-        // new webpack.optimize.ModuleConcatenationPlugin(),
+        new webpack.optimize.ModuleConcatenationPlugin(),
 
         // 根据模块调用次数，给模块分配ids，常被调用的ids分配更短的id, 使得ids可预测，降低文件大小，该模块推荐使用
         new webpack.optimize.OccurrenceOrderPlugin(),
@@ -37,9 +37,6 @@ module.exports = {
         new webpack.DefinePlugin({
             "process.env": { NODE_ENV: JSON.stringify('production') },
             DEBUG: false
-        }),
-        new Visualizer({
-            filename: '../test/statistics.html'
         })
     ],
     module: {
