@@ -1,6 +1,7 @@
 class UCookie {
     constructor() {
-
+        this.value = document.cookie;
+        return this;
     }
 
     set(key, value) {
