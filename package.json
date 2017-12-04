@@ -2,7 +2,7 @@
   "name": "qclib",
   "version": "0.0.1",
   "description": "some javascript snippets piece together",
-  "main": "build/index.js",
+  "main": "dist/index.js",
   "dependencies": {
     "babel-core": "^6.24.1",
     "babel-eslint": "^8.0.1",
