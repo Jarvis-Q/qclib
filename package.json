@@ -2,7 +2,7 @@
   "name": "qclib",
   "version": "0.0.1",
   "description": "some javascript snippets piece together",
-  "main": "dist/index.js",
+  "main": "build/index.js",
   "dependencies": {
     "babel-core": "^6.24.1",
     "babel-eslint": "^8.0.1",
@@ -27,7 +27,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rimraf build && NODE_ENV=production webpack --config webpack.config.js",
-    "preBuild": "babel index.js --out-dir dist && babel libs --out-dir dist/libs"
+    "npmBuild": "babel index.js --out-dir dist && babel libs --out-dir dist/libs"
   },
   "keywords": [
     "toolset",
